@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html xml:lang="es" > 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<!-- html --> 
+<meta name="src" content="Integrales_Eulerianas.tex"> 
+<link rel="stylesheet" type="text/css" href="Integrales_Eulerianas.css"> 
+</head><body 
+>
+<h3 class="sectionHead"><span class="titlemark">1.    </span> <a 
+ id="x1-10001"></a>Integrales Eulerianas .</h3>
+<!--l. 41--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">1.1.    </span> <a 
+ id="x1-20001.1"></a>Función Gamma:</h4>
+<!--l. 43--><p class="noindent" >Se llama función Gamma, <span 
+class="cmmi-10">&#x0393; </span>, o función integral de Euler de 2<span 
+class="ptmr8c-">ª </span>especie a
+la integral generalizada (o impropia):
+<div class="eqnarray">
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas0x.png" alt="         &#x222B; &#x221E;
+&#x0393; (p) =      xp-1e-xdx    &#x2200; p &#x2208; &#x211D; - {0}
+          0
+" class="math-display" ></div>
+</div>
+<!--l. 50--><p class="noindent" >Caso particular: <span 
+class="cmmi-10">p </span><span 
+class="cmr-10">= 1</span>
+<div class="eqnarray">
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas1x.png" alt="         &#x222B;             &#x222B;
+           &#x221E;  0 - x      &#x221E;  -x
+&#x0393; (1)  =   0  x  e  dx =  0 e   dx
+" class="math-display" ></div>
+</div>
+<div class="eqnarray">
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas2x.png" alt="           [   ]
+&#x0393; (1)  =   - e-x &#x221E;0 = - [0 - 1] = 1
+" class="math-display" ></div>
+</div>
+<!--l. 60--><p class="noindent" >Otro caso interesante se obtiene realizando el cambio <span 
+class="cmmi-10">x </span><span 
+class="cmr-10">= </span><span 
+class="cmmi-10">u</span><sup><span 
+class="cmr-7">2</span></sup> <span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">dx </span><span 
+class="cmr-10">= 2</span><span 
+class="cmmi-10">udu</span>
+<div class="eqnarray">
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas3x.png" alt="         &#x222B;                      &#x222B;
+           &#x221E;  2(p- 1) -u2           &#x221E;  2p-1 -u2
+&#x0393; (p)  =   0  u     e    2udu = 2 0  u    e   du
+" class="math-display" ></div>
+</div>
+<!--l. 66--><p class="noindent" >Dándole a p el valor 1/2: <span 
+class="cmmi-10">p </span><span 
+class="cmr-10">=</span> <img 
+src="Integrales_Eulerianas4x.png" alt="1
+2"  class="frac" align="middle">
+<!--l. 68--><p class="noindent" >
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas5x.png" alt=" (  )    &#x222B;
+   1       &#x221E;  0 -u2
+&#x0393;  2  = 2 0  u e   du
+" class="math-display" ></div>
+<!--l. 72--><p class="noindent" >Obteniendo la Integral de la Probabilidad en la Distribución Normal.
+<!--l. 74--><p class="noindent" >
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas6x.png" alt="1  (1)   &#x222B; &#x221E;  -u2
+2&#x0393;  2  =     e   du
+          0
+" class="math-display" ></div>
+<!--l. 79--><p class="noindent" >
+<h5 class="subsubsectionHead"><a 
+ id="x1-3000"></a>Cálculo recurrente</h5>
+<div class="eqnarray">
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas7x.png" alt="         &#x222B;
+&#x0393; (p)  =    &#x221E; xp-1e-x dx
+          0
+" class="math-display" ></div>
+</div>
+<!--l. 85--><p class="noindent" >Integrando por partes:
+<!--l. 87--><p class="noindent" >
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas8x.png" alt=" u = xp-1     du = (p- 1)x(p-2)dx
+dv = e-xdx         v = - e- x
+" class="math-display" ></div>
+<!--l. 94--><p class="noindent" >Por tanto
+<div class="eqnarray">
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas9x.png" alt="                             &#x222B; &#x221E;
+&#x0393; (p) =  - [e-xxp-1]&#x221E; +(p - 1)   xp-2 e- xdx =
+                    0          0
+" class="math-display" ></div>
+</div>
+<!--l. 100--><p class="noindent" >
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas10x.png" alt="= - [0- 0]&#x221E;0 + (p- 1)&#x222B;0&#x221E; xp-2e-x dx
+" class="math-display" ></div>
+<!--l. 104--><p class="noindent" >Obteniendo la fórmula de recurrencia:
+<div class="eqnarray">
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas11x.png" alt="&#x0393; (p) =  (p- 1)&#x0393; (p - 1)  p &#x2208; &#x211D;+ - {0}
+" class="math-display" ></div>
+</div>
+<!--l. 110--><p class="noindent" >a) Si <span 
+class="cmmi-10">p </span><span 
+class="cmsy-10">&#x2208; </span><span 
+class="msbm-10">&#x2124;</span><sup><span 
+class="cmr-7">+</span></sup>
+<!--l. 112--><p class="noindent" >
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas12x.png" alt="&#x0393; &#x0393;(&#x0393; (p&#x22C5; (p-&#x22C5;&#x22C5;2))1) &#x22C5;==&#x22C5;=&#x22C5; ((pp-- 121))&#x22C5;&#x0393;&#x0393;&#x0393;&#x22C5; ( (&#x22C5;(1pp) -- 1 2)) )||||}||||)
+  &#x0393; (1)   =         1
+" class="math-display" ></div>
+<!--l. 122--><p class="noindent" >Multiplicando miembro a miembro:
+<!--l. 124--><p class="noindent" >
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas13x.png" alt="&#x0393; (p) &#x0393; (p- 1)&#x22C5;&#x22C5;&#x22C5;&#x0393; (2) &#x0393; (1) =
+" class="math-display" ></div>
+<!--l. 128--><p class="noindent" >
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas14x.png" alt="= (p- 1)&#x0393; (p - 1) (p- 2)&#x0393; (p - 2)&#x22C5;&#x22C5;&#x22C5;&#x0393; (2) &#x0393; (1)
+" class="math-display" ></div>
+<!--l. 132--><p class="noindent" >Simplificando los comunes a ambos lados de la igualdad queda:
+<!--l. 134--><p class="noindent" >
+<div class="math-display" >
+<img 
+src="Integrales_Eulerianas15x.png" alt="&#x0393; (p) = (p - 1)!
+" class="math-display" ></div>
+ 
+</body></html> 
+
+
+
